@@ -39,8 +39,6 @@ button.zodiac {
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
-  position: relative;
-  overflow: hidden;
   height: 100px;
 }
 
@@ -49,91 +47,52 @@ button.zodiac:hover {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Zodiac Colors and Images */
+/* Zodiac Colors */
 button.zodiac[data-sign="Aries"] {
   background-color: #FF5733; /* Fiery Red */
-  background-image: url('images/aries.png');
 }
 
 button.zodiac[data-sign="Taurus"] {
   background-color: #85BB65; /* Earthy Green */
-  background-image: url('images/taurus.png');
 }
 
 button.zodiac[data-sign="Gemini"] {
   background-color: #FFC300; /* Bright Yellow */
-  background-image: url('images/gemini.png');
 }
 
 button.zodiac[data-sign="Cancer"] {
   background-color: #87CEEB; /* Gentle Blue */
-  background-image: url('images/cancer.png');
 }
 
 button.zodiac[data-sign="Leo"] {
   background-color: #FF8C00; /* Bold Orange */
-  background-image: url('images/leo.png');
 }
 
 button.zodiac[data-sign="Virgo"] {
   background-color: #6B8E23; /* Olive Green */
-  background-image: url('images/virgo.png');
 }
 
 button.zodiac[data-sign="Libra"] {
   background-color: #FF69B4; /* Pink */
-  background-image: url('images/libra.png');
 }
 
 button.zodiac[data-sign="Scorpio"] {
   background-color: #800080; /* Deep Purple */
-  background-image: url('images/scorpio.png');
 }
 
 button.zodiac[data-sign="Sagittarius"] {
   background-color: #4682B4; /* Steel Blue */
-  background-image: url('images/sagittarius.png');
 }
 
 button.zodiac[data-sign="Capricorn"] {
   background-color: #2F4F4F; /* Slate Gray */
-  background-image: url('images/capricorn.png');
 }
 
 button.zodiac[data-sign="Aquarius"] {
   background-color: #00CED1; /* Turquoise */
-  background-image: url('images/aquarius.png');
 }
 
 button.zodiac[data-sign="Pisces"] {
   background-color: #1E90FF; /* Ocean Blue */
-  background-image: url('images/pisces.png');
 }
-
-/* Add Zodiac Symbols */
-button.zodiac::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  opacity: 0.2;
-}
-
-button.zodiac[data-sign="Aries"]::before {
-  background-image: url('images/aries-symbol.png');
-}
-
-button.zodiac[data-sign="Taurus"]::before {
-  background-image: url('images/taurus-symbol.png');
-}
-
-button.zodiac[data-sign="Gemini"]::before {
-  background-image: url('images/gemini-symbol.png');
-}
-
-/* Continue this pattern for all zodiac signs... */
 
