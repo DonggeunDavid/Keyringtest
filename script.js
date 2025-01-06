@@ -42,17 +42,29 @@ document.addEventListener('DOMContentLoaded', () => {
       "주변 사람들과의 협력이 더 큰 성과를 가져올 것입니다."
     ];
 
-    // 1분마다 운세 변경
+    // 운세 업데이트 함수
     function updateFortune() {
       const randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
       zodiacNameElement.textContent = `${zodiac}의 오늘의 운세`;
       fortuneElement.textContent = randomFortune;
     }
 
-    // 즉시 한 번 운세를 설정
-    updateFortune();
+    // 먼저 한 번 운세를 설정하고, 그 이후에는 1분마다 변경되도록 설정
+    if (!localStorage.getItem('fortuneTime') || Date.now() - localStorage.getItem('fortuneTime') > 60000) {
+      // 운세 업데이트
+      updateFortune();
+      localStorage.setItem('fortuneTime', Date.now().toString());
+    }
 
     // 1분마다 운세 갱신
-    setInterval(updateFortune, 60000);
+    setInterval(() => {
+      if (Date.now() - localStorage.getItem('fortuneTime') > 60000) {
+        updateFortune();
+        localStorage.setItem('fortuneTime', Date.now().toString());
+      }
+    }, 60000);
+  }
+});
+
   }
 });
