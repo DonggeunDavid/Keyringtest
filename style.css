@@ -48,51 +48,50 @@ button.zodiac:hover {
 }
 
 /* Zodiac Colors */
-button.zodiac[data-sign="Aries"] {
+button.zodiac[data-sign="aries"] {
   background-color: #FF5733; /* Fiery Red */
 }
 
-button.zodiac[data-sign="Taurus"] {
+button.zodiac[data-sign="taurus"] {
   background-color: #85BB65; /* Earthy Green */
 }
 
-button.zodiac[data-sign="Gemini"] {
+button.zodiac[data-sign="gemini"] {
   background-color: #FFC300; /* Bright Yellow */
 }
 
-button.zodiac[data-sign="Cancer"] {
+button.zodiac[data-sign="cancer"] {
   background-color: #87CEEB; /* Gentle Blue */
 }
 
-button.zodiac[data-sign="Leo"] {
+button.zodiac[data-sign="leo"] {
   background-color: #FF8C00; /* Bold Orange */
 }
 
-button.zodiac[data-sign="Virgo"] {
+button.zodiac[data-sign="virgo"] {
   background-color: #6B8E23; /* Olive Green */
 }
 
-button.zodiac[data-sign="Libra"] {
+button.zodiac[data-sign="libra"] {
   background-color: #FF69B4; /* Pink */
 }
 
-button.zodiac[data-sign="Scorpio"] {
+button.zodiac[data-sign="scorpio"] {
   background-color: #800080; /* Deep Purple */
 }
 
-button.zodiac[data-sign="Sagittarius"] {
+button.zodiac[data-sign="sagittarius"] {
   background-color: #4682B4; /* Steel Blue */
 }
 
-button.zodiac[data-sign="Capricorn"] {
+button.zodiac[data-sign="capricorn"] {
   background-color: #2F4F4F; /* Slate Gray */
 }
 
-button.zodiac[data-sign="Aquarius"] {
+button.zodiac[data-sign="aquarius"] {
   background-color: #00CED1; /* Turquoise */
 }
 
-button.zodiac[data-sign="Pisces"] {
+button.zodiac[data-sign="pisces"] {
   background-color: #1E90FF; /* Ocean Blue */
 }
-
